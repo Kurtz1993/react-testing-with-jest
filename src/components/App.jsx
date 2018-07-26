@@ -10,7 +10,6 @@ export default class App extends Component {
   }
 
   render() {
-    const { courses } = this.state;
     return (
       <div>
         <div className="navbar-fixed">
@@ -28,7 +27,7 @@ export default class App extends Component {
           </nav>
         </div>
         <div>
-          <Grid items={courses} />
+          <Grid items={this.state.courses} />
         </div>
       </div>
     );
